@@ -1,0 +1,12 @@
+include ../../utils/bemto/bemto
+- set_bemto_settings({ modifier: "--" })
+
+block variables
+
+doctype html
+html(lang="ru")
+  head
+    include head/head
+  +b.BODY(class=pageClass)
+    +b.MAIN(role='main')
+      block content

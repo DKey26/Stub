@@ -1,0 +1,48 @@
+extends ../../components/layout/layout
+
+block variables 
+  - var pageClass = '';
+  - var pageTitle = "Payler Wallet";
+  - var pageDescription = ""
+  - var pageName = "index"
+
+block content
+  +b.coming-soon.js-animate 
+
+    +b.clouds(id="scene")
+      +e.first-plan(data-depth="0.5")
+        img(class="cloud-6", src="images/svg/clouds/cloud-6.svg", alt="cloud")
+        img(class="cloud-7", src="images/svg/clouds/cloud-7.svg", alt="cloud")
+      +e.second-plan(data-depth="0.4")
+        img(class="cloud-5", src="images/svg/clouds/cloud-5.svg", alt="cloud")
+        img(class="cloud-1", src="images/svg/clouds/cloud-1.svg", alt="cloud")
+      +e.third-plan(data-depth="0.2")
+        img(class="cloud-4", src="images/svg/clouds/cloud-4.svg", alt="cloud")
+        img(class="cloud-3", src="images/svg/clouds/cloud-3.svg", alt="cloud")
+        img(class="cloud-2", src="images/svg/clouds/cloud-2.svg", alt="cloud")
+
+    .container
+      +e.img-wrap
+        img(src="images/svg/rocketman.svg", alt="Payler Wallet - Coming Soon")
+      +e.logo 
+        img(src="images/svg/logo.svg", alt="Payler Wallet")
+        span Payler
+          span Wallet
+
+      +e.H1.title Coming soon!
+
+      +b.FORM.pl-form(class="js-sendmail", action="https://payler.com/api/v1/ru/ConnectionRequests", method="POST")
+        +e.P.description Оставь свою почту, чтобы первым узнать подробности!
+        +e.hidden-group 
+          input(name="name")
+          input(name="phone")
+          input(name="site")
+          input(name="sourceSection")
+          input(name="license")
+          input(name="g-recaptcha-response")
+        +e.field-group
+          +b.pl-field(class="--inside js-check-empty")
+            label
+              input(name="email", pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+[\.][[a-z]{2,4}$", size="30")
+              +e.SPAN.placeholder Email
+          +b.BUTTON.pl-btn(type="submit", class="--accent") Оставить почту

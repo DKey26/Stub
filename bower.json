@@ -1,0 +1,15 @@
+{
+  "name": "bolerplate",
+  "description": "bolerplate",
+  "main": "index.js",
+  "authors": [
+    "nick"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ]
+}

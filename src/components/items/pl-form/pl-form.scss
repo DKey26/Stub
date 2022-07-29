@@ -1,0 +1,29 @@
+.pl-form{
+  margin: 0 auto;
+  max-width: 600px;
+  &__description{
+    letter-spacing: 0.02px;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 28px;
+  }
+
+  &__field-group{
+    display: flex;
+    .pl-field{
+      display: flex;
+      flex-grow: 1;
+    }
+    &>:first-child{
+      margin-right: 12px;
+    }
+    &>:last-child{
+      margin-right: 0;
+    }
+  }
+
+  &__hidden-group{
+    display: none;
+  }
+}

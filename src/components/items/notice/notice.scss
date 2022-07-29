@@ -1,0 +1,23 @@
+.notice {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  transform: translateY(-150px);
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  z-index: 99999;
+  transition: all 0.3s linear;
+  opacity: 0;
+  &--open {
+    transform: none;
+    opacity: 1;
+  }
+  &--green {
+    background: #2b8e18;
+  }
+  &--red {
+    background: $red;
+  }
+}

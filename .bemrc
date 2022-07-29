@@ -1,0 +1,27 @@
+module.exports = {
+    "root": true,
+    "modules": {
+        "bem-tools": {
+            "plugins": {
+                "create": {
+                    "templateFolder": "templates",
+                    "techs": [
+                        "scss", "pug"
+                    ],
+                    "levels":{
+                        sections:{
+                            "path": "blocks/sections",
+                            "default": true
+                        },
+                        pages:{
+                            "path": "blocks/pages",
+                             "techs": [
+                                "scss", "pug"
+                            ]
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,40 @@
+// ПАРАМЕТРЫ
+
+// Цвета
+$color-primary: #0f1418;
+$color-secondary: #888;
+$color-light: #e0e0e0;
+$color-lightest: #efefef;
+$color-text: #bab6b6;
+$red: red;
+$white: #fff;
+$black: #000;
+
+$color-accent: #524FA1;
+$color-background: #E5E5E5;
+$color-header: #162645;
+$color-text: #000000;
+$color-border: #F0F0F8;
+
+// Шрифты
+$main-font: "Gilroy";
+
+// Размер шрифта
+$font-size-base: (
+  null : 16px,
+  767px : 16px,
+  992px : 17px,
+  1200px: 19px
+);
+
+// Отступы
+$spacing-small: 0.75rem;
+$spacing-single: 1rem;
+$spacing-double: 2rem;
+$spacing-triple: 3rem;
+$spacing-big: 6rem;
+
+// Media queries
+$desktop: 1200px;
+$tablet: 992px;
+$mobile: 767px;
